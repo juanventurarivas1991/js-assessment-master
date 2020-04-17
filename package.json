@@ -18,7 +18,7 @@
     "deep-eql": "^4.0.0",
     "expect.js": "0.1.2",
     "inversify": "^5.0.1",
-    "jquery": "^1.11.0",
+    "jquery": "^3.4.0",
     "mocha": "^2.2.4",
     "reflect-metadata": "^0.1.13",
     "sinon": "^1.14.1",
