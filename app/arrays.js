@@ -3,12 +3,7 @@ exports = typeof window === 'undefined' ? global : window;
 exports.arraysAnswers = {
   indexOf: function(arr, item) {
 
-    for (var i = 0; i < arr.length; i++){
-      if (arr[i] === item){
-        return i;
-      }
-    }
-    return -1;
+    return arr.indexOf(item);
   },
 
   sum: function(arr) {
@@ -23,14 +18,11 @@ exports.arraysAnswers = {
   },
 
   remove: function(arr, item) {
-    var aux = [];
 
-    for (var i = 0; i < arr.length; i++) {
-      if (arr[i] !== item) {
-        aux.push(arr[i]);
-      }
+    for (var i = 0; i < arr.length; i++){
+      arr.splice(arr.indexOf(item), 1);
     }
-    return aux;
+    return arr;
   },
 
   removeWithoutCopy: function(arr, item) {
